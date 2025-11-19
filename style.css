@@ -1,0 +1,108 @@
+.botonera {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.api-btn {
+  flex: 1 1 calc(50% - 1rem);
+  min-width: 120px;
+  max-width: 200px;
+  height: 80px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0.75rem;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.api-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+
+.api-btn.gatos {
+  background-color: #d79119;
+  background-image: url("/img/gatoDato.png");
+}
+
+.api-btn.pokemons {
+  background-color: #ef4444;
+  background-image: url("/img/Pokeball.png");
+}
+
+.api-btn.recetas {
+  background-color: #325dbb;
+  background-image: url("/img/Receta.png");
+}
+
+.api-btn.perros {
+  background-color: #3c3110;
+  background-image: url("/img/perro.jpg");
+}
+
+
+.card {
+  background: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+
+#detailModal .bg-white {
+  animation: fadeInUp 0.3s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 640px) {
+  .card img {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card img {
+    height: 240px;
+  }
+}
